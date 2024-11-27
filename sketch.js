@@ -19,39 +19,6 @@ function setup() {
   }
 }
 
-/*
-function draw() {
-  background(0);
-
-  textFont("Maax Mono");
-  textAlign(CENTER, BOTTOM);
-  textSize(64);
-
-  let whiteTextCount = 0; // Track the number of white texts
-
-  for (let i = 0; i < grid.length; i++) {
-    let x = grid[i].x;
-    let y = grid[i].y;
-
-    let visibilityNoise = noise(x * 0.05, y * 0.05, frameCount * 0.01);
-    if (visibilityNoise < 0.6) continue;
-
-    let textNoise = noise(x * 0.01, y * 0.01, frameCount * 0.01);
-    let index = floor(textNoise * randomTexts.length);
-
-    let colorNoise = noise(x * 0.02, y * 0.02, frameCount);
-    if (colorNoise > 0.1 && whiteTextCount < 10) {
-      fill(255);
-      whiteTextCount++;
-    } else {
-      fill("rgba(255,255,255,0.2)"); // Transparent white
-    }
-
-    text(randomTexts[index], dist(x, y, mouseX, mouseY), y);
-  }
-
-}
-  */
 
 function draw() {
   background("blue");
